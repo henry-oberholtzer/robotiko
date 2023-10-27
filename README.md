@@ -41,6 +41,10 @@ Test: If a number contains the digit 1, and no 2 or 3, replace with the string "
 Code: numberReplacer(11)
 Result: "Beep!"
 
+Test: If user enters a name, and the number contains the digit 3, replace with the string "Won't you be my neighbor, NAME?"
+Code: numberReplacer(13, NAME)
+Result: "Won't you be my neighbor, NAME?
+
 ##### Describe arrayReplacer()
 Test: Iterates through an array, replacing digits as needed with numberReplacer()
 Code: numberReplacer([1, 2, 4, 21, 11, 13, 30])
