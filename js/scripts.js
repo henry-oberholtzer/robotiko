@@ -14,5 +14,7 @@ function numberReplacer(num) {
     const digitArray = num.toString().split('')
     if (digitArray.includes("3")) {
         return "Won't you be my neighbor?"
+    } if (digitArray.includes("2")) {
+        return "Boop!"
     }
 }
