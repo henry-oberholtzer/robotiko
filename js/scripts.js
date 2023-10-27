@@ -10,6 +10,24 @@ function countUp(num) {
     return numArray;
 };
 
+function countDown(num) {
+    const numArray = [];
+    let i = num;
+    while (i >= 0) {
+        numArray.push(i)
+        i--
+    };
+    return numArray;
+};
+
+function countUpOrDown(num, direction) {
+    if (direction === "descend") {
+        return countDown(num);
+    } else {
+        return countUp(num);
+    }
+};
+
 function numberReplacer(num) {
     const digitArray = num.toString().split('')
     if (digitArray.includes("3")) {
@@ -28,8 +46,8 @@ function arrayReplacer(array) {
     return replacedArray;
 };
 
-function mrRobogerSystem(input, name) {
-    const roboger = arrayReplacer(countUp(input))
+function mrRobogerSystem(input, name, direction) {
+    const roboger = arrayReplacer(countUpOrDown(input, direction))
     if (name !== "") {
         return nameInsertion(roboger, name)
     } else {
@@ -48,19 +66,19 @@ function nameInsertion(array, name) {
     return insertedName
 };
 
-function inputVerification(input, name) {
+function inputVerification(input, name, direction) {
     const nameTrim = name.trim().replace(/\W/g,"");
     const inputParse = parseInt(input);
     if (inputParse && input !== '') {
         if (name !== "") {
-            return mrRobogerSystem(inputParse, nameTrim)
+            return mrRobogerSystem(inputParse, nameTrim, direction)
         } else {
-            return mrRobogerSystem(inputParse, "")
+            return mrRobogerSystem(inputParse, "", direction)
         }
     } else {
         return Error("Not a valid numeric input")
     }
-}
+};
 
 // UI Logic
 
@@ -68,7 +86,8 @@ function handleFormSubmission(e) {
     e.preventDefault();
     const input = document.getElementById("input").value;
     const name = document.getElementById("name").value;
-    const outputArray = inputVerification(input, name);
+    const descendAscend = document.getElementById("descendAscend").value;
+    const outputArray = inputVerification(input, name, descendAscend);
     return printToUser(outputArray);
 }
 
