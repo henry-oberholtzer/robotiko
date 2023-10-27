@@ -1,6 +1,27 @@
 # 'Mr. Roboger's Neighborhood'
 
-JS Web Application by Henry Oberholtzer
+A JS Web Application by Henry Oberholtzer
+
+### Description
+
+A simple program that takes a numeric input from a user, and returns an array of data replaced according to a set of parameters.
+
+### Written In:
+
+* JavaScript
+* HTML
+* CSS
+
+### Installation and use
+
+* Download folder from github, open index.html in web browser of choice
+* Alternatively - see the project hosted on github pages
+
+### Known Bugs
+
+* None known at this time
+
+## Pseudocode TDD Tests
 
 ##### Describe countUp()
 Test: Returns an array counting up by integers starting at 0 to the user's given number
@@ -34,3 +55,8 @@ Result: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Be
 Test: Takes an input, and parses into a number if possible, returning an error for text and blank inputs.
 Code: inputVerification("hello")
 Result: null
+
+##
+
+Licensed under a GNU GPLv3 license
+Copyright 2023 (c) Henry Oberholtzer

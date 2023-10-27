@@ -39,3 +39,16 @@ function inputVerification(input) {
         return Error("Not a valid numeric input")
     }
 }
+
+// UI Logic
+
+function handleFormSubmission() {
+    e.preventDefault();
+    const input = document.getElementById("input").value;
+    
+}
+
+window.addEventListener("load", () => {
+    const form = document.getElementById("form");
+    form.addEventListener("submit", handleFormSubmission())
+});
