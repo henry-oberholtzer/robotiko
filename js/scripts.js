@@ -88,15 +88,20 @@ function handleFormSubmission(e) {
     const name = document.getElementById("name").value;
     const descendAscend = document.getElementById("descendAscend").value;
     const outputArray = inputVerification(input, name, descendAscend);
-    return printToUser(outputArray);
+    if(input) {
+        return printToUser(outputArray);
+    }
 }
 
 function printToUser(outputArray) {
     const output = document.getElementById("output");
     output.innerHTML = "";
+    output.setAttribute("class", "container-md border rounded p-4 bg-light");
     const ul = document.createElement("ul");
+    ul.setAttribute("class", "list-group list-group-flush bg-light")
     outputArray.forEach((element, index) => {
         const li = document.createElement("li");
+        li.setAttribute("class", "list-group-item bg-light")
         li.append(element);
         return ul.append(li);
     });
@@ -104,6 +109,8 @@ function printToUser(outputArray) {
 }
 
 window.addEventListener("load", () => {
+    const output = document.getElementById("output")
+    output.setAttribute("class", "invisible")
     const form = document.getElementById("form");
     form.addEventListener("submit", handleFormSubmission)
 });

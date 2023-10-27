@@ -4,13 +4,15 @@ A JS Web Application by Henry Oberholtzer
 
 ### Description
 
-A simple program that takes a numeric input from a user, and returns an array of data replaced according to a set of parameters.
+A simple program that takes a numeric input from a user, and returns an array of data replaced according to a set of parameters. Formatted largely with bootstrap.
 
-### Written In:
+### Technologies Used:
 
 * JavaScript
 * HTML
 * CSS
+* Bootstrap
+
 
 ### Installation and use
 
