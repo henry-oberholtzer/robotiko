@@ -22,3 +22,9 @@ function numberReplacer(num) {
         return num
     };
 };
+
+function arrayReplacer(array) {
+    const replacedArray = array.map((element) => numberReplacer(element));
+    return replacedArray;
+}
+    
