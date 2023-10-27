@@ -9,7 +9,8 @@ Result: [0, 1, 2, 3, 4, 5]
 
 ##### Describe numberReplacer()
 Test: If a number contains the digit 3, replace with the string "Won't you be my neighbor?"
-Code: numberReplacer()
+Code: numberReplacer(13)
+Result: "Won't you be my neighbor?"
 
 Test: If a number contains the digit 2, and no 3, replace with the string "Boop!"
 Code: numberReplacer(21)
@@ -28,3 +29,8 @@ Result: ["Beep!", "Boop", 4, "Boop!", "Beep!", "Won't you be my neigbhor?", "Won
 Test: Takes a single digit input, returning an array counting up from zero, which has been transformed according to the protocol from arrayReplacer()
 Code: mrRobogerSystem(13)
 Result: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]
+
+##### Describe inputVerification()
+Test: Takes an input, and parses into a number if possible, returning an error for text and blank inputs.
+Code: inputVerification("hello")
+Result: null
