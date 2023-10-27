@@ -1,24 +1,7 @@
-* {
-    box-sizing: border-box;
-    margin: -1px;
-    padding: 0;
-    border: 1px solid red;
-}
-.output {
-    display: flex;
-    overflow: scroll;
-    height: 200px;
-    width: 200px;
-    text-align: center;
+h1 {
+    font-family: Goldman;
+    font-weight: 700;
 }
 
-ul {
-    width: inherit;
-}
-li {
-    height: 200px;
-    max-width: 100%;
-    text-align: center;
-    padding: auto  ;
-    
+body {
 }

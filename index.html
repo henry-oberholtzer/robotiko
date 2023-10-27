@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Goldman">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
     <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-    <div class="main-page">
-        <div class="title">
+    <div class="container-md">
+        <div class="text-center p-4">
             <h1>Mr. Roboger's Neighborhood</h1>
         </div>
-        <div class="form">
+        <div class="form border rounded p-4">
             <form id="form">
-                <label for="input">Input a number:</label>
-                <input id="input" type="number" placeholder="13">
-                <label for="name">Input your name:</label>
-                <input id="name" type="text" placeholder="Ernest">
-                <label for="descendAscend">Order:</label>
-                <select id="descendAscend" type="">
-                    <option value="descend">Descending</option>
-                    <option value="ascend">Ascending</option>
-                </select>
-
-                <button type="submit">Robotize</button>
+                <div class="row">
+                    <div class="col">
+                        <input id="input" type="number" class="form-control" placeholder="Number" aria-label="Input Number">
+                    </div>
+                    <div class="col-auto">
+                        <input id="name" type="text" class="form-control" placeholder="Name (optional)" aria-label="Name (optional)">
+                    </div>
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="descendAscend">Order:</label>
+                        <select class="form-select" id="descendAscend" type="">
+                            <option value="ascend" selected>Ascending</option>
+                            <option value="descend">Descending</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="p-3"></div>
+                <div class="row">
+                    <div class="col align-self-center">
+                        <button class="btn btn-primary" type="submit">Robotize</button>
+                    </div>
+                </div>
+                
             </form>
         </div>
         <div class="output" id="output">
