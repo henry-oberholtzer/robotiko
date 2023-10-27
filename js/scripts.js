@@ -31,4 +31,11 @@ function arrayReplacer(array) {
 function mrRobogerSystem(input) {
     return arrayReplacer(countUp(input));
 }
-    
+
+function inputVerification(input) {
+    if (parseInt(input) && input !== '') {
+        return mrRobogerSystem(parseInt(input))
+    } else {
+        return Error("Not a valid numeric input")
+    }
+}
