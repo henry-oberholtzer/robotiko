@@ -42,13 +42,26 @@ function inputVerification(input) {
 
 // UI Logic
 
-function handleFormSubmission() {
+function handleFormSubmission(e) {
     e.preventDefault();
     const input = document.getElementById("input").value;
-    
+    const outputArray = inputVerification(input);
+    return printToUser(outputArray);
+}
+
+function printToUser(outputArray) {
+    const output = document.getElementById("output");
+    output.innerHTML = "";
+    const ul = document.createElement("ul");
+    outputArray.forEach((element, index) => {
+        const li = document.createElement("li");
+        li.append(element);
+        return ul.append(li);
+    });
+    output.append(ul);
 }
 
 window.addEventListener("load", () => {
     const form = document.getElementById("form");
-    form.addEventListener("submit", handleFormSubmission())
+    form.addEventListener("submit", handleFormSubmission)
 });
