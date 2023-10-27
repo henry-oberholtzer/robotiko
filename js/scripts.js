@@ -1,14 +1,14 @@
 // Business Logic
 
 function countUp(num) {
-    const numArray = []
-    let i = 0
+    const numArray = [];
+    let i = 0;
     while (i <= num) {
         numArray.push(i)
         i++
-    }
+    };
     return numArray;
-}
+};
 
 function numberReplacer(num) {
     const digitArray = num.toString().split('')
@@ -16,5 +16,9 @@ function numberReplacer(num) {
         return "Won't you be my neighbor?"
     } if (digitArray.includes("2")) {
         return "Boop!"
-    }
-}
+    } if (digitArray.includes("1")) {
+        return "Beep!"
+    } else {
+        return num
+    };
+};
