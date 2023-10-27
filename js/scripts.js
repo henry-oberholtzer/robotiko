@@ -27,4 +27,8 @@ function arrayReplacer(array) {
     const replacedArray = array.map((element) => numberReplacer(element));
     return replacedArray;
 }
+
+function mrRobogerSystem(input) {
+    return arrayReplacer(countUp(input));
+}
     
