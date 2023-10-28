@@ -67,6 +67,9 @@ Result: null
 ##
 
 Code licensed under a GNU GPLv3 license
+
 Copyright 2023 (c) Henry Oberholtzer
+
 Bootstrap is licensed under MIT
+
 "robot_man.png" taken from "Wasn't The Future Wonderful" (1979) by Tim Onosko, used transformatively & educationally under 17 U.S. Code § 107.
