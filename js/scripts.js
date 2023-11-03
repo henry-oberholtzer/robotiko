@@ -11,13 +11,7 @@ function countUp(num) {
 };
 
 function countDown(num) {
-    const numArray = [];
-    let i = num;
-    while (i >= 0) {
-        numArray.push(i)
-        i--
-    };
-    return numArray;
+    return countUp(num).reverse();
 };
 
 function countUpOrDown(num, direction) {
