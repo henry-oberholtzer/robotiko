@@ -1,10 +1,10 @@
-# 'Mr. Roboger's Neighborhood'
+# 'Robotiko Rejektor'
 
 A JS Web Application by Henry Oberholtzer
 
 ### Description
 
-A simple program that takes a numeric input from a user, and returns an array of data replaced according to a set of parameters. Formatted with Bootstrap v5.0.2.
+A simple program that takes a numeric input from a user, and returns an array of data replaced according to a set of parameters. Formatted with Bootstrap v5.0.2. Name is a reference to the lyrics & artist of [Injection by Robotiko Rejekto](https://www.youtube.com/watch?v=vYZRfDmwDDw)
 
 ### Technologies Used:
 
